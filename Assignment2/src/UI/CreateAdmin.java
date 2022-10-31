@@ -4,7 +4,9 @@
  */
 package UI;
 
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import model.Admin;
 import model.City;
 import model.DoctorDirectory;
 import model.HospitalDirectory;
@@ -43,10 +45,10 @@ public class CreateAdmin extends javax.swing.JPanel {
         txtRole.setText(person.person.get(i-1).getRole());
     }
 
-    private void initComponents() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    }
+    //private void initComponents() {
+       // throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    //}
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -177,15 +179,16 @@ if(txtPass.getText() == null ? txtPass2.getText() != null : !txtPass.getText().e
                         adm.setPasswordA(pass);
 
                         JOptionPane.showMessageDialog(null, "Saved Successfully");
-                    }
+                    
                     //                else{
                         //                                    JOptionPane.showMessageDialog(null, "Nope");
                         //                                }
 
-                }
+                
     
     }//GEN-LAST:event_btnSubmitActionPerformed
-
+}
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnSubmit;
@@ -200,3 +203,4 @@ if(txtPass.getText() == null ? txtPass2.getText() != null : !txtPass.getText().e
     private javax.swing.JTextField txtUser;
     private javax.swing.JLabel txtname;
     // End of variables declaration//GEN-END:variables
+}

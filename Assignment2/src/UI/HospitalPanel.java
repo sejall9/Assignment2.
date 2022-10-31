@@ -42,6 +42,7 @@ public class HospitalPanel extends javax.swing.JPanel {
         this.docDirectory = docDirectory;
         this.hospDirectory = hospDirectory;
         this.commDirectory = commDirectory;
+        this.sys = sys;
         
         ArrayList<Community> commArray = commDirectory.commDirectory;
         if(!commArray.isEmpty()){
@@ -49,7 +50,7 @@ public class HospitalPanel extends javax.swing.JPanel {
                 cmbComm.addItem(commArray.get(k).toString());
             }
         }
-        populateTabComm();
+        //populateTabComm();
     
     }
 
@@ -212,14 +213,14 @@ public class HospitalPanel extends javax.swing.JPanel {
                 hosp.setHname(hname);
                 hosp.setCommunity(selectedComm);
                 hosp.setRatings(ratings);
-                populateTabComm();
+                //populateTabComm();
                 JOptionPane.showMessageDialog(null, "Added!");
                 
                 txtHospname.setText(" ");
                 cmbComm.setSelectedIndex(0);
                 cmbComm.setSelectedIndex(0);
     }//GEN-LAST:event_btnViewActionPerformed
-
+    }
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
         // TODO add your handling code here:
         String hname = txtHospname.getText();
@@ -240,7 +241,7 @@ public class HospitalPanel extends javax.swing.JPanel {
                 hosp.setHname(hname);
                 hosp.setCommunity(selectedComm);
                 hosp.setRatings(ratings);
-                populateTabComm();
+                //populateTabComm();
                 JOptionPane.showMessageDialog(null, "Updated!");
                 
                 txtHospname.setText(" ");
@@ -304,9 +305,9 @@ public class HospitalPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtHospname;
     // End of variables declaration//GEN-END:variables
 
-    private void populateTabComm() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+  // private void populateTabComm() {
+    //    throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    //}
 
 }
     

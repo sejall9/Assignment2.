@@ -4,6 +4,7 @@
  */
 package UI;
 
+import java.awt.CardLayout;
 import javax.swing.JPanel;
 import model.City;
 import model.DoctorDirectory;
@@ -36,12 +37,12 @@ public class PatientPanel extends javax.swing.JPanel {
         this.ptDirectory = ptDirectory;
     }
 
-    private void initComponents() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    //private void initComponents() {
+      //  throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    //}
 
     
-    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -141,4 +142,4 @@ public class PatientPanel extends javax.swing.JPanel {
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 }
-}
+

@@ -129,22 +129,12 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addComponent(Doctorbtn)
                 .addGap(18, 18, 18)
                 .addComponent(Patientbtn)
-                .addContainerGap(62, Short.MAX_VALUE))
+                .addContainerGap(92, Short.MAX_VALUE))
         );
 
         jSplitPanel.setLeftComponent(contrlArea);
 
-        javax.swing.GroupLayout workAreaLayout = new javax.swing.GroupLayout(workArea);
-        workArea.setLayout(workAreaLayout);
-        workAreaLayout.setHorizontalGroup(
-            workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 287, Short.MAX_VALUE)
-        );
-        workAreaLayout.setVerticalGroup(
-            workAreaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 296, Short.MAX_VALUE)
-        );
-
+        workArea.setLayout(new java.awt.CardLayout());
         jSplitPanel.setRightComponent(workArea);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -164,35 +154,46 @@ public class MainJFrame extends javax.swing.JFrame {
     private void PatientbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PatientbtnActionPerformed
         // TODO add your handling code here:
           PatientPanel panelpatient = new PatientPanel(workArea, person, ptDirectory, docDirectory,hospDirectory, commDirectory, sys);
-          workArea.add("PatientPanel",panelpatient );
-          CardLayout lay = (CardLayout) workArea.getLayout();
-          lay.next(workArea);
+          jSplitPanel.setRightComponent(panelpatient);
+         // workArea.add("PatientPanel",panelpatient );
+         // CardLayout lay = (CardLayout) workArea.getLayout();
+         // lay.next(workArea);
         
     }//GEN-LAST:event_PatientbtnActionPerformed
 
     private void SystembtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SystembtnActionPerformed
         // TODO add your handling code here
         SystemPanel syst=new SystemPanel(workArea, person, ptDirectory, docDirectory,hospDirectory, commDirectory, sys);
-        workArea.add("SystemPanel",syst );
-        CardLayout lay = (CardLayout) workArea.getLayout();
-        lay.next(workArea);
+        jSplitPanel.setRightComponent(syst);
+        //workArea.add("SystemPanel",syst );
+        
+     //   CardLayout lay = (CardLayout) workArea.getLayout();
+      //  lay.next(workArea);
 
     }//GEN-LAST:event_SystembtnActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+       HospitalPanel hos=new HospitalPanel(workArea, person, ptDirectory, docDirectory,hospDirectory, commDirectory, sys);
+        jSplitPanel.setRightComponent(hos);
+        
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+         CommunityPanel comm=new CommunityPanel(workArea, person, ptDirectory, docDirectory,hospDirectory, commDirectory, sys);
+        jSplitPanel.setRightComponent(comm);
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void DoctorbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DoctorbtnActionPerformed
         // TODO add your handling code here:
          DoctorPanel doc = new DoctorPanel(workArea, person, ptDirectory, docDirectory,hospDirectory, commDirectory, sys);
-        workArea.add("DoctorPanel",doc );
-        CardLayout lay = (CardLayout) workArea.getLayout();
-        lay.next(workArea);
+         jSplitPanel.setRightComponent(doc);
+       // workArea.add("DoctorPanel",doc );
+        
+      //  CardLayout lay = (CardLayout) workArea.getLayout();
+     //   lay.next(workArea);
     }//GEN-LAST:event_DoctorbtnActionPerformed
 
     /**

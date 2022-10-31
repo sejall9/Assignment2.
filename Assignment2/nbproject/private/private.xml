@@ -3,7 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/Users/sejal/Desktop/Assignment2/src/UI/CommunityPanel.java</file>
+            <file>file:/Users/sejal/Desktop/Assignment2/src/UI/PatientPanel.java</file>
+            <file>file:/Users/sejal/Desktop/Assignment2/src/UI/CreatePatient.java</file>
+            <file>file:/Users/sejal/Desktop/Assignment2/src/UI/MainJFrame.java</file>
+            <file>file:/Users/sejal/Desktop/Assignment2/src/UI/DoctorPanel.java</file>
+            <file>file:/Users/sejal/Desktop/Assignment2/src/UI/HospitalPanel.java</file>
             <file>file:/Users/sejal/Desktop/Assignment2/src/UI/CreateAdmin.java</file>
+            <file>file:/Users/sejal/Desktop/Assignment2/src/UI/CreateDoctor.java</file>
+            <file>file:/Users/sejal/Desktop/Assignment2/src/UI/PatientDetails.java</file>
         </group>
     </open-files>
 </project-private>
